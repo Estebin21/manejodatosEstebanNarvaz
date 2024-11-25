@@ -21,9 +21,9 @@ namespace manejodatosEstebanNarvaz
         {
             EstudianteUDLA estudiante = new EstudianteUDLA
             {
-                Id = 1,
-                Nombre = "Estebin",
-                Carrera = "Ingeniería software"
+                Id = Int32.Parse(editor_id.Text),
+                Nombre = editor_Nombre.Text,
+                Carrera = editor_Carrera.Text
             };
             bool guardar_Estudiante = _estudianteUDLARepository.CrearEstudianteUDLA(estudiante);
             if (guardar_Estudiante)
